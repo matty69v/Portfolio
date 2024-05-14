@@ -610,36 +610,33 @@ footer .cols .news-col form button i{
     align-items: center;
     justify-content: center;
 }
-.link-wrapper {
+.link-wrapper{
     text-decoration: none;
     color: black;
     display: block;
+    margin: 0 auto;
+    text-align: center;
 }
-
-.link-wrapper .item {
+.link-wrapper .item{
     display: flex;
     align-items: center;
-    width: 100%; /* or set a specific width like 300px, 500px, etc. */
-    max-width: 800px; /* Adjust the max-width as needed */
-    margin: 10px auto; /* Center the box and add some margin */
-    padding: 50px; /* Adjust padding as needed */
-    border: 1px solid #ccc; /* Optional: add a border */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: add a shadow */
-    background-color: #fff; /* Optional: add a background color */
-    text-align: left; /* Ensure text is left-aligned */
+    width: 100%;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 50px;
+    border: 1px solid #000000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.24);
+    text-align: left;
 }
-
-/* Optional: additional styling for internal elements */
-.link-wrapper .item .icon {
-    margin-right: 10px; /* Space between icon and text */
+.link-wrapper .item .icon{
+    margin-right: 10px;
 }
-
-.link-wrapper .item .info h3 {
+.link-wrapper .item .info h3{
     margin: 0;
-    font-size: 1.2em; /* Adjust font size as needed */
+    font-size: 1.2em;
 }
-
-.link-wrapper .item .info p {
+.link-wrapper .item .info p{
     margin: 0;
-    color: #000000; /* Adjust text color as needed */
+    color: #ffffff;
 }
