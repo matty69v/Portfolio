@@ -201,7 +201,7 @@ body{
 
 .about .info p{
     color: #ccc;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .about .info button{
@@ -622,8 +622,8 @@ footer .cols .news-col form button i{
     align-items: center;
     width: 115%;
     max-width: 800px;
-    margin: 10px auto;
-    padding: 65px;
+    margin: 2px auto;
+    padding: 60px;
     border: 1px solid #000000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     background: rgba(255, 255, 255, 0.24);
