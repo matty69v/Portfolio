@@ -12,6 +12,10 @@
     transition: all 0.3s ease;
     transform: translateX(100%);
 }
+body.default-theme {
+    background-color: var(--bg-black-100);
+    color: var(--text-black-900);
+}
 .style-switcher.open
 {
     transform: translateX(-25px);
