@@ -80,7 +80,13 @@
               <a href="images/CV2024.pdf" class="btn">MON CV</a>
             </div>
             <div class="home-img padd-15">
-              <img src="images/photo1.JPEG" alt="" style="width: 75%; height: auto;">
+                <img src="images/photo1.JPEG" alt="" style="width: 79%; height: auto; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease;">
+                <!-- ===== Effet cool photo ===== -->
+                <style>
+                .home-img img:hover {
+                  transform: scale(1.1);
+                }
+                </style>
             </div>
           </div>
         </div>
@@ -296,6 +302,10 @@
       flex-direction: column;
       justify-content: space-between;
     }
+    
+    .home-img img:hover {
+     transform: scale(1.1);
+    }
   </style>
 
   <!-- ===== Section Services Fin ===== -->
@@ -328,6 +338,7 @@
             <div class="portfolio-img">
               <a href="images/Fortinet_Certified_Associate_in_Cybersecurity.pdf" target="_blank">
                 <img src="images/1698420129577.jpeg" alt="Fortinet2">
+              </a>
             </div>
           </div>
         </div>
@@ -374,11 +385,20 @@
           </div>
         </div>
         <!-- ====== Élément de portfolio Fin ====== -->
-        <!-- ====== Élément de portfolio Début ====== -->
-        <!-- ====== Élément de portfolio Fin ====== -->
       </div>
     </div>
   </section>
+
+  <style>
+    .portfolio-img img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-img img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
   <!-- ===== Section Portfolio Fin ===== -->
   </div>
   <!-- ===== Main Content End ===== -->
