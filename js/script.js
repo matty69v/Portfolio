@@ -90,3 +90,19 @@ const nav = document.querySelector(".nav"),
                     allSection[i].classList.toggle("open");
                 }
             }
+//test
+const carousel = document.querySelector('.skills-carousel');
+let isPaused = false;
+
+carousel.addEventListener('mouseenter', () => isPaused = true);
+carousel.addEventListener('mouseleave', () => isPaused = false);
+
+function animateCarousel() {
+  if (!isPaused) {
+    const firstItem = carousel.firstElementChild;
+    carousel.appendChild(firstItem.cloneNode(true));
+    carousel.removeChild(firstItem);
+  }
+}
+
+setInterval(animateCarousel, 3000); // Change de compétence toutes les 3 secondes
