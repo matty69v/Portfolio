@@ -90,19 +90,22 @@ const nav = document.querySelector(".nav"),
                     allSection[i].classList.toggle("open");
                 }
             }
-//test
-const carousel = document.querySelector('.skills-carousel');
-let isPaused = false;
-
-carousel.addEventListener('mouseenter', () => isPaused = true);
-carousel.addEventListener('mouseleave', () => isPaused = false);
-
-function animateCarousel() {
-  if (!isPaused) {
-    const firstItem = carousel.firstElementChild;
-    carousel.appendChild(firstItem.cloneNode(true));
-    carousel.removeChild(firstItem);
-  }
-}
-
-setInterval(animateCarousel, 3000); // Change de compétence toutes les 3 secondes
+// Initialisation de Swiper
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3, // Nombre de slides visibles
+    spaceBetween: 30, // Espace entre les slides
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    loop: true, // Le carrousel tourne en boucle
+    autoplay: {
+      delay: 2500, // Delay entre chaque slide
+      disableOnInteraction: false, // Empêche la pause de l'auto-play lors de l'interaction
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 1, // Sur mobile, on affiche une seule slide
+      }
+    }
+  });
